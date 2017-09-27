@@ -3,15 +3,14 @@ title: "Mid-Atlantic EAFM risk assessment documentation"
 author: "Gaichas and DePiper, Northeast Fisheries Science Center"
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output:
-  html_document:
-    toc: yes
   word_document:
     toc: no
-geometry: margin=0.8in
+  html_document:
+    toc: yes
 fontsize: 11pt
-bibliography: My_Library.bib
+geometry: margin=0.8in
 csl: canadian-journal-of-fisheries-and-aquatic-sciences.csl
-
+bibliography: My_Library.bib
 ---
 
 ```{r Directory and Data Set-up, echo = F, message = F}
