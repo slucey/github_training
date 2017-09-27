@@ -1,7 +1,7 @@
 ---
 title: "State of the Ecosystem - Mid-Atlantic"
 author:  "Ecosystem Dynamics and Assessment Branch, Northeast Fisheries Science Center"
-Mike Ford is awesome!!!!!!!
+Mike Ford is awesome!!!!!!!!
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output:
   pdf_document:
