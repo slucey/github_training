@@ -3,25 +3,19 @@ title: "Mid-Atlantic EAFM risk assessment documentation"
 author: "Gaichas and DePiper, Northeast Fisheries Science Center"
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output:
-  pdf_document:
-    includes:
-      in_header: preamble-latex.tex
-    keep_tex: yes
-    pandoc_args: --latex-engine=xelatex
-    toc: no
   html_document:
     toc: yes
   word_document:
     toc: no
 geometry: margin=0.8in
 fontsize: 11pt
-bibliography: /Users/sgaichas/Documents/0_Data/EAFM_MAFMC/My_Library.bib
+bibliography: My_Library.bib
 csl: canadian-journal-of-fisheries-and-aquatic-sciences.csl
 
 ---
 
 ```{r Directory and Data Set-up, echo = F, message = F}
-image.dir <- '/images'
+image.dir <- 'images'
 library(data.table); library(Kendall); library(rgdal)
 load('SOE_data.RData')
 knitr::opts_chunk$set(echo = FALSE, fig.align='center')
@@ -240,7 +234,7 @@ cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 Current assessment results for all MAFMC managed stocks are summarized below. Based on these results, F and B status are both in the low risk category for surfclams, ocean quahogs, scup, black sea bass, and butterfish. Bluefish, golden tilefish, and spiny dogfish F status is in the low risk category, and B risk is in the low-moderate risk category. Summer flounder F status is in the high risk category and B status is in the low-moderate risk category. F and B status for northern and southern goosefish stocks were formerly in the low risk categories, but a recent assessment update was rejected and unable to determine status, so we provisionally rank them low-moderate risk (unknown but weight of evidence supports lower risk). Similarly, both squid stocks have unknown status but F is likely to be low and stock size robust so they are ranked low-moderate risk. Blueline tilefish are high risk for F status and have unknown B status and little auxiliary information in the Mid-Atlantic region, and so rank moderate-high risk for B status. Finally, Atlantic mackerel has moderate-high risk for both F and B status due both to failed assessment/unknown status and indications from recent analyses. Atlantic mackerel status will be updated after SAW/SARC review of the new benchmark assessment.
 
 ```{r, fig.cap="NEED TO UPDATE THIS PLOT Summary of single species status for MAFMC stocks \\label{KOBE}", echo = F, message = FALSE, warning = FALSE}
-knitr::include_graphics(file.path(image.dir, 'MAFMC_joint_stocks_2017.pdf'))
+knitr::include_graphics(file.path(image.dir, 'MAFMC_joint_stocks_2017.png'))
 
 ```
 
